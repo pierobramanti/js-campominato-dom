@@ -12,9 +12,14 @@ const btn= document.getElementById(`play`)
 
 const grid = document.getElementById(`grid`);
 
-const BOMBS = 16
+// Creo una costante BOMBS a cui assegno il valore numerico 16 //
+const bombs = 16
+
+//Creo una funzione con parametro//
 function bombsGenerator(cells) {
 
+// Dichiaro un array vuoto //
+    let bombsArray = []
 }
 
 btn.addEventListener(`click`, function(){
