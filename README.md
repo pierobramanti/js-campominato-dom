@@ -23,3 +23,29 @@ Ad esempio:
 Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
+
+
+DIVISIONE DEL LAVORO
+
+1 Creo una costante BOMBS a cui assegno il valore numerico 16
+1.1 Creo una variabile flag impostata su true
+2 Dichiaro un array vuoto
+3 Creo una funzione con parametro
+3.1 richiamo la variabile dell'array vuoto
+3.2 Iterizzo l'array vuoto con un ciclo while finchè non contiene lo stesso numero presente nella costante BOMBS
+3.2.1 Prendo un numero randomico e lo salvo in una variabile
+3.2.2 Se il numero non è incluso nell'array lo inserisco
+4 Creo una funzione con ritorno per il Game Over
+4.1 Imposto la flag su false
+4.2 Restituisco la variabile flag
+5 All'interno del ciclo for i< 100
+5.1 Al click del quadrato
+5.1.2 SE la variabile flag è su true
+5.1.3 SE l'array delle bombe include la cella clickata
+5.1.4 aggiungo all'elemento clickato un classe con bg-color rosso
+5.1.5 Stampo sul DOM il punteggio
+5.1.6 Stampo "Hai pestato una bomba"
+5.2 Altrimenti
+5.2.1 aggiungo all'elemento clickato la classe "clicked-azure"
+5.2.2 Incremento di 1 lo score
+5.2.3 Stampo sul DOM il punteggio
