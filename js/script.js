@@ -16,6 +16,9 @@ let gaming = true;
 // Creo una variabile per le bombe
 let bombsArray = [];
 
+// DICHIARO LA VARIABILE SCORE//
+let score = 0;
+
 // Creo una funzione con parametro//
 function bombsGenerator(cells) {
     // Dichiaro un array vuoto //
