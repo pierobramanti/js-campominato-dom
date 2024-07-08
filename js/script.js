@@ -6,7 +6,7 @@ function createSquare(){
 
 const btn = document.getElementById(`play`);
 const grid = document.getElementById(`grid`);
-const points = document.querySelector(".score")
+const points = document.querySelector(".score");
 
 // Creo una costante BOMBS a cui assegno il valore numerico 16 //
 const bombs = 16;
@@ -47,6 +47,10 @@ btn.addEventListener(`click`, function() {
     // Genera le bombe
     bombsGenerator(100);
 
+    // Reset del punteggio all'inizio del gioco
+    score = 0;
+    points.innerHTML = score;
+
     for (let i = 0; i < 100; i++) {
         let currentSquare = createSquare();
         currentSquare.innerText = i + 1;
@@ -60,6 +64,8 @@ btn.addEventListener(`click`, function() {
                 } else {
                     this.classList.add("clicked");
                     console.log("Hai clickato su " + (i + 1));
+                    score++;
+                    points.innerHTML = score; // Aggiorna il punteggio sullo schermo
                 }
             } else {
                 console.log("Il gioco non è attivo. Ricarica la pagina per iniziare una nuova partita");
