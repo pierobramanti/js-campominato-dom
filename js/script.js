@@ -65,7 +65,7 @@ btn.addEventListener(`click`, function() {
                     this.classList.add("clicked");
                     console.log("Hai clickato su " + (i + 1));
                     score++;
-                    points.innerHTML = score; // Aggiorna il punteggio sullo schermo
+                    points.innerHTML =  "Il tuo punteggio è : " + score; // Aggiorna il punteggio sullo schermo
                 }
             } else {
                 console.log("Il gioco non è attivo. Ricarica la pagina per iniziare una nuova partita");
