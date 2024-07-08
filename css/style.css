@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: green;
+}
+
+
+#grid{
+    max-width: 100vh;
+    height:100vh ;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid white;
+    background-color: rgb(221, 221, 221);
+    color:black;
+}
+
+.clicked{
+    background-color: cyan;
+}
+
+.btn{
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-right: 15px;
+    
+}
