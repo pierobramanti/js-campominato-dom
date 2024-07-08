@@ -6,6 +6,7 @@ function createSquare(){
 
 const btn = document.getElementById(`play`);
 const grid = document.getElementById(`grid`);
+const points = document.querySelector(".score")
 
 // Creo una costante BOMBS a cui assegno il valore numerico 16 //
 const bombs = 16;
