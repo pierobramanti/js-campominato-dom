@@ -20,6 +20,15 @@ function bombsGenerator(cells) {
 
 // Dichiaro un array vuoto //
     let bombsArray = []
+// Iterizzo l'array vuoto con un ciclo while finchè non contiene lo stesso numero presente nella costante BOMBS
+    while(bombsArray.length < bombs) {
+// Prendo un numero randomico e lo salvo in una variabile //
+        let random = Math.floor(Math.random() * cells) + 1;
+// Se il numero non è incluso nell'array lo inserisco
+        if(!bombsArray.includes(random)){
+            bombsArray.push(random)
+        }
+    }
 }
 
 btn.addEventListener(`click`, function(){
