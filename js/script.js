@@ -61,6 +61,7 @@ btn.addEventListener(`click`, function() {
                     this.classList.add("clicked-red");
                     game_over();
                     console.log("Hai pestato una bomba");
+                    points.innerHTML= " Hai perso! Ricarica la pagine per iniziare una nuova partita."
                 } else {
                     this.classList.add("clicked");
                     console.log("Hai clickato su " + (i + 1));
